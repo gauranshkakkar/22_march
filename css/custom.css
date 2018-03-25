@@ -1,0 +1,288 @@
+body{
+    overflow-x: auto;
+}
+ 
+@font-face{
+    font-family: myFirstFont;
+    src: url(../fonts/Ubuntu-B_0.ttf);
+}
+
+@font-face{
+    font-family: mySecondFont;
+    src: url(../fonts/Ubuntu-R_0.ttf);
+}
+
+
+.five-tiles-container{
+    margin-bottom: 20px;
+}
+
+.color-tile-1{
+    background-color: #5faee3;
+}
+
+.color-tile-2{
+    background-color: #6eb5e5;
+}
+
+.color-tile-3{
+    background-color: #7cbde8;
+}
+
+.color-tile-4{
+    background-color: #8bc4ea;
+}
+
+.color-tile-5{
+    background-color: #99cbef;
+}
+
+
+.five-tiles{
+    padding: 2em;
+    color: #ffffff;
+}
+
+.five-tiles > a > p{
+    color: #ffffff;
+    margin-top: 1.5em;
+}
+
+.panel-heading{
+    font-family: myFirstFont;
+}
+
+.pie-chart {
+    background-color: white;
+    padding: 40px;
+}
+
+.body-remove-padding {
+    padding: 0px;
+}
+
+.show-button {
+    width: 100%;
+    padding: 20px;
+    background-color: #5faee3;
+    color: #ffffff;
+}
+
+.to-do-heading{
+    display: inline-block;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+
+/* Custom Checkbox Snippet Used from #W3Schools and customzed by self */
+
+.chkbox {
+    display: block;
+    position: relative;
+    padding-left: 3em;
+    padding-top: 2px;
+    margin-bottom: 1.7em;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-family: mySecondFont;
+    font-weight: 100;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.chkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.chkbox:hover input ~ .checkmark {
+    background-color: #e5e5e5;
+}
+
+/* When the checkbox is checked, add a blue background */
+.chkbox input:checked ~ .checkmark {
+    background-color: #5faee3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.chkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.chkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Custom Checkbox End */
+
+
+
+.weather-chart {
+    background-color: white;
+    
+}
+
+.location-button {
+    width: 100%;
+    padding: 20px;
+    background-color: #5faee3;
+    color: #ffffff;
+    text-align: right;
+}
+
+.testimonial {
+    color: #ffffff;
+    background-color: #5faee3;
+    padding: 1.8em;
+    margin: 0px;
+    font-family: mySecondFont;
+    font-style: italic;
+}
+
+.test-font-body {
+    font-size: 2em;
+}
+
+.keith-gardner {
+    background-image: url(../images/Panel-picture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.body-padding {
+    padding: 0px;
+}
+
+.image-overlap {
+    margin-top: -8em;
+}
+
+.word-spacing {
+    word-spacing: 5em;
+}
+
+
+
+
+/* Pagination Style Snippet Custom edited by self */
+
+/* Center Align */
+ul {    
+    list-style: none; 
+    margin: 0 auto;
+}
+
+/* Margin between each hexagon */
+
+
+.pagination-div ul li {   
+    float: left;
+    margin: 0 5px;
+}
+
+/* Defining hexagon element */
+.hexagon {
+	width: 16px;
+	height: 9px;
+	position: relative;
+}
+
+a > .hexagon {
+	background: #8bc4ea;    
+}
+
+.active .hexagon {
+	background: #5faee3;    
+}
+
+/* hover states color change*/
+a > .hexagon:hover {
+	background: #5faee3;    
+}
+
+/* pseudo classes */
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+}
+
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+}
+
+/* pseudo classes color variations */
+.active .hexagon:before {
+	border-bottom: 4px solid #5faee3;
+}
+
+.active .hexagon:after {
+	border-top: 4px solid #5faee3;
+}
+
+a > .hexagon:before {
+	border-bottom: 4px solid #8bc4ea;
+}
+
+a > .hexagon:after {
+    border-top: 4px solid #8bc4ea;
+}
+
+/* pseudo classes hover states */
+a > .hexagon:hover:before {
+	border-bottom-color: #5faee3;
+}
+
+a > .hexagon:hover:after {
+	border-top-color: #5faee3;
+}
+
+/* Pagination End */
